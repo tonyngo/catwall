@@ -1,0 +1,33 @@
+html, body {
+  height: 100%; }
+
+#container {
+  margin: 0 auto;
+  max-width: 900px; }
+
+.catwall {
+  width: 100%;
+  min-width: 320px;
+  max-width: 900px;
+  margin-left: -1.25%; }
+  .catwall-wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30.83333%;
+    overflow-y: hidden;
+    margin: 0 0 2.5% 2.5%;
+    border: 1px solid #eee;
+    position: relative; }
+    .catwall-wrapper:before {
+      content: "";
+      display: inline-block;
+      padding-top: 75%; }
+    .catwall-wrapper img {
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%;
+      position: absolute;
+      top: 50%; }
