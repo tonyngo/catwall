@@ -16,7 +16,8 @@
 	// when the user scrolls to the bottom of the page
 	function bind(instance) {
 		$window.scroll(function (event) {
-			if($window.scrollTop() + $window.height() == $document.height()) {
+			// -60 to trigger on iPhone
+			if($window.scrollTop() >= $document.height() - $window.height() - 60) {
 				instance.loadPage();
 			}
 		});
